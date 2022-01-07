@@ -18,7 +18,7 @@
 
 ## Screenshot of deployed application
 
-![screencapture-file-Users-rizwanashraf-homework-week3-password-generator-index-html-2022-01-05-17_28_10.png](https://raw.githubusercontent.com/riz1ash786/week3-password-generator/main/screencapture-file-Users-rizwanashraf-homework-week3-password-generator-index-html-2022-01-05-17_28_10.png)
+![password generator screenshot](./images/screencapture-file-Users-rizwanashraf-homework-week3-password-generator-index-html-2022-01-05-17_28_10.png)
 
 ---
 
