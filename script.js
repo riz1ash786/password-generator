@@ -1,6 +1,6 @@
 var characterLength = 8;
 var choiceArray = [];
-
+// The below arrays include my symbols, lowercase plus uppercase charcters as well as my numbers.
 var specialCharactersArray = [
   "!",
   "@",
@@ -90,3 +90,18 @@ function writePassword() {
 
   passwordText.value = password;
 }
+
+
+function getPrompts() {
+  choiceArray = [];
+
+  characterLength = parseInt(
+    prompt(
+      "Please select a password length between 8-128 characters"
+    )
+  );
+// if the inout does not meet the password length criteria then the alert below will trigger
+  if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
+    alert("Your password must be between 8-128 characters. Please try again");
+    return false;
+  }
