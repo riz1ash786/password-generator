@@ -99,16 +99,20 @@ function writePassword() {
 // for loop will continue for length of password
 function generatePassword() {
   var password = "";
-  for (var i = 0; i < characterLength; i++) {
-    var randomCharacter = Math.floor(Math.random() * choiceArray.length);
-    password = password + choiceArray[randomCharacter];
+  if (choiceArray.length > 0) {
+    console.log(choiceArray.length);
+    for (var i = 0; i < characterLength; i++) {
+      var randomCharacter = Math.floor(Math.random() * choiceArray.length);
+      password = password + choiceArray[randomCharacter];
+    }
+  } else {
+    alert("Please choose atleast one type of character.");
   }
+  choiceArray = [];
   return password;
 }
 
 function getPrompts() {
-  choiceArray = [];
-
   characterLength = parseInt(
     prompt("Please select a password length between 8-128 characters")
   );
