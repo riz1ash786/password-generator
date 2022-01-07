@@ -91,17 +91,47 @@ function writePassword() {
   passwordText.value = password;
 }
 
+function generatePassword() {
+  var password = "";
+  for (var i = 0; i < characterLength; i++) {
+    var randomCharacter = Math.floor(Math.random() * choiceArray.length);
+    password = password + choiceArray[randomCharacter];
+  }
+  return password;
+}
 
 function getPrompts() {
   choiceArray = [];
 
   characterLength = parseInt(
-    prompt(
-      "Please select a password length between 8-128 characters"
-    )
+    prompt("Please select a password length between 8-128 characters")
   );
-// if the inout does not meet the password length criteria then the alert below will trigger
+  // if the input does not meet the password length criteria then the alert below will trigger
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert("Your password must be between 8-128 characters. Please try again");
     return false;
   }
+  // the following code concatenates nesting arrays
+  if (
+    confirm("Would you like to include lowercase letters in your password?")
+  ) {
+    choiceArray = choiceArray.concat(lowerCaseArray);
+  }
+
+  if (
+    confirm("Would you like to include uppercase letters in your password?")
+  ) {
+    choiceArray = choiceArray.concat(upperCaseArray);
+  }
+
+  if (confirm("Would you like to include numbers in your password?")) {
+    choiceArray = choiceArray.concat(numberArray);
+  }
+
+  if (
+    confirm("Would you like to include special characters in your password?")
+  ) {
+    choiceArray = choiceArray.concat(specialCharactersArray);
+  }
+  return true;
+}
