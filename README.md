@@ -8,7 +8,7 @@
 
 - When the 'Generate Password' button is clicked a prompt appears asking the user to select a password length between 8-128 characters.
 
-- Once the user has input a integer between 8-128 the prompts cycle through the criteria asking the user if they would like lowecase, uppercase, numbers and special characters in their password.
+- Once the user has input an integer between 8-128 the prompts cycle through the criteria asking the user if they would like lowercase, uppercase, numbers and special characters in their password.
 
 - If the user enters an integer that is not between 8-128 they will be presented with a prompt alerting them, it will return a false and the criteria prompts will not show.
 
