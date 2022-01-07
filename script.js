@@ -1,4 +1,4 @@
-var characterLength = 8;
+var characterLength = [];
 var choiceArray = [];
 // The below arrays include my symbols, lowercase plus uppercase charcters as well as my numbers.
 var specialCharactersArray = [
@@ -85,12 +85,13 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var truePrompts = getPrompts();
   var passwordText = document.querySelector("#password");
+  // if the prompts are as expected then a password will be generated
+  if (truePrompts) {
+    var Password = generatePassword();
 
-  passwordText.value = password;
-}
-
+// for loop will continue for length of password
 function generatePassword() {
   var password = "";
   for (var i = 0; i < characterLength; i++) {
