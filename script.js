@@ -75,6 +75,7 @@ var upperCaseArray = [
   "Y",
   "Z",
 ];
+
 var numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 // Assignment Code
@@ -90,7 +91,11 @@ function writePassword() {
   // if the prompts are as expected then a password will be generated
   if (truePrompts) {
     var Password = generatePassword();
-
+    passwordText.value = Password;
+  } else {
+    passwordText.value = "";
+  }
+}
 // for loop will continue for length of password
 function generatePassword() {
   var password = "";
@@ -109,7 +114,7 @@ function getPrompts() {
   );
   // if the input does not meet the password length criteria then the alert below will trigger
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
-    alert("Your password must be between 8-128 characters. Please try again");
+    alert("Your password must be between 8-128 characters. Please try again.");
     return false;
   }
   // the following code concatenates nesting arrays
