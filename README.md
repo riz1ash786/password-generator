@@ -20,28 +20,36 @@
 
 ## Screenshot of deployed application
 
-Password length alert.
+Password length prompt.
+
 ![password length screenshot](./images/screenshot1.png)
 
-Lowercase characters alert.
+Lowercase characters prompt.
+
 ![lowercase characters screenshot](./images/screenshot2.png)
 
-Uppercase characters alert.
+Uppercase characters prompt.
+
 ![uppercase characters screenshot](./images/screenshot3.png)
 
-Numbers alert.
+Numbers prompt.
+
 ![numbers screenshot](./images/screenshot4.png)
 
-Special characters alert.
+Special characters prompt.
+
 ![special characters screenshot](./images/screenshot5.png)
 
 Error handling - 'please choose atleast one type of character' alert.
+
 ![error handling - 'please choose atleast one type of character' screenshot](./images/screenshot6.png)
 
 Error handling - password length criteria not met alert.
+
 ![error handling - password length criteria not met screenshot](./images/screenshot7.png)
 
 Deployed Application showcasing password.
+
 ![password generator screenshot](./images/screencapture-file-Users-rizwanashraf-homework-week3-password-generator-index-html-2022-01-05-17_28_10.png)
 
 ---
