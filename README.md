@@ -20,20 +20,28 @@
 
 ## Screenshot of deployed application
 
-![select password length](./images/Screenshot 2022-01-08 at 19.45.17.png)
+Password length alert.
+![password length screenshot](./images/screenshot1.png)
 
-![lowercase characters screenshot](./images/Screenshot 2022-01-08 at 19.45.49.png)
+Lowercase characters alert.
+![lowercase characters screenshot](./images/screenshot2.png)
 
-![uppercase characters screenshot](./images/Screenshot 2022-01-08 at 19.46.02.png)
+Uppercase characters alert.
+![uppercase characters screenshot](./images/screenshot3.png)
 
-![numbers screenshot](./images/images/Screenshot 2022-01-08 at 19.46.11.png)
+Numbers alert.
+![numbers screenshot](./images/screenshot4.png)
 
-![special characters screenshot](./images/Screenshot 2022-01-08 at 19.46.18.png)
+Special characters alert.
+![special characters screenshot](./images/screenshot5.png)
 
-![error handling - 'please choose atleast one type of character' screenshot](./images/Screenshot 2022-01-08 at 19.46.27.png)
+Error handling - 'please choose atleast one type of character' alert.
+![error handling - 'please choose atleast one type of character' screenshot](./images/screenshot6.png)
 
-![error handling - password length criteria not met screenshot](./images/Screenshot 2022-01-08 at 19.46.40.png)
+Error handling - password length criteria not met alert.
+![error handling - password length criteria not met screenshot](./images/screenshot7.png)
 
+Deployed Application showcasing password.
 ![password generator screenshot](./images/screencapture-file-Users-rizwanashraf-homework-week3-password-generator-index-html-2022-01-05-17_28_10.png)
 
 ---
