@@ -105,6 +105,7 @@ function generatePassword() {
       var randomCharacter = Math.floor(Math.random() * choiceArray.length);
       password = password + choiceArray[randomCharacter];
     }
+    // Error handling - alert will show if user does select atleast one type of letter, special charcter or number
   } else {
     alert("Please choose atleast one type of character.");
   }
